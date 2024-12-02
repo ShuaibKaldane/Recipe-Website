@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipe  Website</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+    
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+   <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>D</span>IGITAL CLOCK BOOK</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#packages">Recipe Listings</a>
+        <a href="#gallery">Meal Planner</a>
+        <a href="#book">Sign Up</a>
+        <a href="#contact">contact US</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form method="post" action="/logins">
+        <h3>login</h3>
+        <input type="email" name="email" class="box" placeholder="enter your email" required>
+        <input type="password" name="password" class="box" placeholder="enter your password" required>
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+      </form>
+    </div>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Digital Cookbook</h3>
+        <p>Meal Planner</p>
+        <a href="#gallery" class="btn">Plan Now</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="Images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="Images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="Images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="Images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="Images/vid-5.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="Images/vid-1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    
+    </section>
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>c</span>
+        <span>e</span>
+        <span>i</span>
+        <span>p</span>
+        <span>e</span>
+        <span class="space"></span>
+        <span>L</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        <span>s</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/p-1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-utensils"></i> Paella </h3>
+
+            <p>
+              A famous rice dish that typically includes seafood, chicken, and vegetables, seasoned with saffron.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price"> Allergies, Sodium</div>
+            <form method="get" action="/page1">
+              <button  class="btn"> See More</button>
+            </form>
+            
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p-2.jpg" alt="" />
+          <div class="content">
+             <h3><i class="fas fa-utensils"></i> Tortilla Española</h3>
+            <p>
+              A traditional Spanish omelette made with eggs, potatoes, and onions.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">Cholesterol, Fat</div>
+            <form method="get" action="/page2">
+              <button  class="btn"> See More</button>
+            </form>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p-3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-utensils"></i>Gazpacho </h3>
+            <p>
+              A cold tomato-based soup that is blended with vegetables like cucumbers, bell peppers, onions, and garlic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">Acidic, Raw</div>
+            <form method="get" action="/page3">
+              <button  class="btn"> See More</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-4.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-utensils"></i> Jamón Ibérico</h3>
+            <p>
+              A type of cured ham from the Iberian Peninsula, often served thinly sliced as an appetizer.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price"> Sodium, Processed</div>
+            <form method="get" action="/page4">
+              <button  class="btn"> See More</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-5.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-utensils"></i>Churros</h3>
+            <p>
+              Fried dough pastries typically enjoyed for breakfast or dessert, often served with a cup of thick hot chocolate for dipping.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">Sugar, Fat</div>
+            <form method="get" action="/page5">
+              <button  class="btn"> See More</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-6.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-utensils"></i> Patatas Bravas</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">Spicy, Fried</div>
+            <form method="get" action="/page6">
+              <button  class="btn"> See More</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>S</span>
+        <span>i</span>
+        <span>g</span>
+        <span>n</span>
+        <span>U</span>
+        <span>P</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="Images/book1.png" alt="" />
+        </div>
+        <form method="post" action="/user/new">
+          <div class="inputBox">
+            <h3>Name</h3>
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+          <div class="inputBox">
+            <h3>Email</h3>
+            <input type="text" name="email" placeholder="Email" />
+          </div>
+          <div class="inputBox">
+            <h3>Password</h3>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div class="inputBox">
+            <h3>Confirm Password</h3>
+            <input type="password" name="confirmpassword" placeholder="Confirm Password" />
+          </div>
+          <button class="btn"> Sign UP Now</button>
+        </form>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>M</span>
+        <span>e</span>
+        <span>a</span>
+        <span>l</span>
+        <span class="space"></span>
+        <span>P</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+
+      </h1>
+      <div class="box-container">
+        <div class="box">
+            <img src="images/img-1.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-2.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-3.jpg" alt="" />
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-4.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-5.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-6.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-7.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/img-8.jpg" alt="" />
+            <div class="content">
+                <h3>Amazing Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <button class="btn seeMoreBtn">See More</button>
+            </div>
+        </div>
+        
+    </div>
+    <form method="get" action="/user">
+      <button class="btn"> Show Users</button>
+    </form>
+   
+    </div>
+          </section>
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact1.png" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <textarea
+            placeholder="message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" style="border: none;">
+          <h3>About us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            quas magni pariatur est accusantium voluptas enim nemo facilis sit
+            debitis.
+          </p>
+        </div>
+        <div class="box" style="border: none;">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+        </div>
+        <div class="box" style="border: none;">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">Receipe</a>
+          <a href="#">Meals</a>
+          <a href="#">Add Own Receipe</a>
+          <a href="#">Contact US</a>
+          <a href="#">Sign Up</a>
+         
+        </div>
+        <div class="box" style="border: none;">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="credit">
+        created by <span> Shuaib </span> | all rights reserved!
+      </h1>
+    </section>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/app.js"></script>
+  </body>
+
+</html>

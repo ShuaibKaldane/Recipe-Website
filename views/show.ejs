@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+        td form {
+            margin: 0;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Dish Name</th>
+            <th>Content</th>
+            <th>Action</th>
+        </tr>
+        <% for (let users of result) { %>
+            <tr>
+                <td><%= users.id %></td>
+                <td><%= users.email %></td>
+                <td><%= users.name %></td>
+                <td><%= users.dishname %></td> 
+                <td><%= users.content %></td> 
+                <td>
+                    <form method="get" action="/user/edit/<%= users.id %>/">
+                        <button>Add Receipe Details</button>
+                    </form>
+                    <form method="get" action="/user/<%= users.id %>/delete">
+                        <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

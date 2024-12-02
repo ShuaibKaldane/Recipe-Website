@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <form method="post" action="/user/<%= user.id %>?_method=PATCH">
+      <h1>You are now editing: <%= user.email %></h1>
+      <br />
+      <div class="inputBox">
+        <textarea name="content" id=""><%= user.content %></textarea>
+      </div>
+      <br />
+      <br />
+      <div class="inputBox">
+        <input type="text" name="dishname" placeholder="Enter dish name" />
+      </div>
+      <br />
+      <br />
+      <div class="inputBox">
+        <input type="password" name="password" placeholder="Enter password" />
+      </div>
+      <div class="inputBox">
+        <input type="hidden" name="userId" value="<%= user.id %>" />
+      </div>
+      <div class="inputBox">
+        <button class="btn">Add Receipe</button>
+      </div>
+    </form>
+  </body>
+</html>
